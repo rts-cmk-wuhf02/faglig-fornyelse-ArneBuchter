@@ -1,0 +1,33 @@
+.index{
+    &__hero{
+        margin: 10px auto;
+        width: 600px;
+        height: 400px;
+        transition: all 1500ms ease-in-out;
+        background: url("../images/Tommestok.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* animation: animateImg 1s ease-in-out; */
+    }
+    &__article{
+        margin: 0 auto 0 auto;
+        width: 600px;       
+    }
+    &__heading{
+        font-size: 3rem;
+    }
+    
+}
+
+@keyframes animateImg{
+    
+    0%{
+        width: 300px ;
+        height: 200px;        
+    }
+
+    100%{
+        width: 600px ;
+        height: 400px;
+    }
+}
