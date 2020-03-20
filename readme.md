@@ -14,4 +14,24 @@ Jeg vil ikke begynde at opremse problemerne med Wordpress.
 
 Min kode for siderne findes i på github siden. Desuden at den ene side, den der hedder todo, live på https://todo.arvi.dk
 
+En liste over de ressourcer som har hjulpet mig i processen
+
+contentful og deres dokumentation
+
+w3school
+
+mdn (Mozilla)
+
+Egne tidligere projekter til at lave layout 
+
+gulp
+
+Min version af BEM. Istedet for Block fortæller det første i min version, hvilken scc/modul fil tingene kan findes i og så er alt ellers 
+
+elements og modules.
+
+OBS Studio
+
+
+
 Som sagt er min opgave en smule mindre end jeg havde ønsket at levere, men grundet Corona er jeg også nødsaget til at passe børn, mens jeg arbejder.
