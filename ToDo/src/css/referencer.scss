@@ -1,0 +1,76 @@
+@import 'style';
+
+.reference{
+    &__article{
+        width: 80vw;
+        padding: 4rem 0;
+        border-bottom: solid 3px $todoColor;
+        margin: auto;
+    }
+
+    &__heading{
+        margin: 2rem 0;
+    }
+    &__text{
+        line-height: 1.5rem;
+    }
+
+    &__images{
+        display: flex;
+        flex-wrap: wrap;
+
+        &-wrapper{
+            width: 90vw;
+            margin: auto;
+            padding: 1rem 0;
+        }
+    }
+
+    &__img{
+
+
+        &-box{
+            width: 45vw;
+            border-bottom: solid 3px $todoColor;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 1.5rem 0;
+        }
+    }
+
+    &__udtalelse{
+        width: 80vw;
+        text-align: center;
+        margin: 6rem auto;
+        color: $todoColor;
+        font-size: 1.5rem;
+    }
+
+    &__navn{
+        color: $textColor;
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .reference{
+        &__images{
+            &-wrapper{
+                width: 80vw;
+            }
+        }
+
+        &__img{
+            &-box{
+                width: 20vw;
+            }
+        }
+
+        &__udtalelse{
+            width: 30vw;
+        }
+    }
+}

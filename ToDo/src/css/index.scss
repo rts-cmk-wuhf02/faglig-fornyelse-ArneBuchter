@@ -1,0 +1,112 @@
+@import 'style';
+@import 'slider';
+
+.index{
+    &__bullitpoints{
+        margin: 0 auto 0 auto;
+        background-color: $textColorTwo;
+        color: $todoColor;
+        box-sizing: border-box;
+        width: 80vw;
+    }
+
+    &__bullit{
+        
+        &-wrapper{
+            margin: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &-link{
+            text-decoration: none;
+            color: $todoColor;
+        }
+
+        &-text{
+            margin: 2rem 0 0 0;
+        }
+    }
+
+    &__text{
+        color: $todoColor;
+        font-size: 1.6rem;
+        font-weight: 900;
+        
+        &-box{
+            width: 80vw;
+            margin: auto;
+            padding-top: 5rem;
+        }
+    }
+
+    &__parralax{
+        width: 100%;
+        height: 600px;      
+        background-image: url(../images/COLOURBOX30116750_adjusted.jpg);
+        position: relative;
+        opacity: 0.85;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__main{
+        position: relative;
+    }
+    &__rollover{
+        position: absolute;
+        background-color: $textColorTwo;
+        left: 0;
+        right: 0;
+        height: 300px;
+        transform: skewY(8deg);
+        bottom: 150px;
+    }
+    &__moveon{
+        background-color: $textColorTwo;
+        height: 300px;
+    }
+}
+.slider{
+    display: none;
+}
+
+@media screen and (min-width: 769px){
+    .slider{
+        display: block;
+    }
+
+    .index{
+        &__text{
+            font-size: 2rem;
+
+            &-box{
+                width: 30vw;
+            }
+        }
+
+        &__bullitpoints{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__bullit{
+            width: 30%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .index__bullitpoints{
+        font-size: 0.9rem;
+    }
+
+    .index__text{
+        font-size: 1.8rem;
+    }
+
+}

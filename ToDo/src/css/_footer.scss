@@ -1,0 +1,145 @@
+.footer{
+    background-color: $todoColor;
+    margin: 0;
+    padding: 0;
+
+    &__topline{
+        width: 100%;
+        height: 0.7rem;
+        background-color: $layoutLineOne;
+    }
+
+    &__content{
+        padding: 1rem 0 0 0;
+        width: 80vw;
+        margin: auto;
+        justify-content: space-between;
+    }
+    &__image{
+        width: 50vw;
+    }
+    &__adresse{
+        line-height: 0.5rem;
+        color: $textColorTwo;
+    }
+    &__middlebox{
+        display: flex;
+        width: 100%;
+    }
+    &__link{
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        color: $textColorTwo;
+        background-color: rgba(155, 75, 91, 0.6);
+    }
+
+    &__facebook{
+        width: 30%;
+    }
+    &__nyhedsbrev{
+        color: $textColorTwo;
+        width: 100%;
+    }
+    &__heading{
+        width: 20vw;
+        font-size: 1rem;
+    }
+
+    &__form{
+        position: relative;
+    }
+
+    &__inputfelt{
+        padding: 0 1rem;
+        height: 2rem;
+        width: 65vw;
+        border-radius: 25px;
+    }
+    &__submit{
+        position: absolute;
+        right: 30px;
+        top: 0.5rem;
+        font-size: 1.2rem;
+        color: $todoColor;
+        background-color: $textColorTwo;
+        box-shadow: none;
+        border: none;
+    }
+
+    &__bottum{
+        background-color: $footerColor;
+        color: $textColorTwo;
+        &-wrapper{
+            width: 80vw;
+            height: 3rem;
+            margin: 1rem auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__endlink{
+        text-decoration: none;
+        color: $textColorTwo;
+    }
+
+    &__copy{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .footer{
+        &__content{
+            display: flex;
+        }
+
+        &__image{
+            width: 8vw;
+        }
+
+        &__middlebox{
+            width: 35vw;
+            justify-content: flex-end;
+        }
+
+        &__nyhedsbrev{
+            width: 25vw;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__link{
+            display: inline;
+            background-color: $todoColor;
+        }
+
+        &__facebook{
+            width: 50%;
+        }
+
+        &__text{
+            width: 20vw;
+        }
+
+        &__inputfelt{
+            width: 16vw;
+        }
+
+        &__bottum{
+            height: 2.5rem;
+        }
+
+        &__copy{
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .erhverv__link{
+        font-size: 0.5rem;
+    }
+}
